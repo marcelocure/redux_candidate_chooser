@@ -18,6 +18,14 @@ export function approveCandidate(candidate) {
   }
 }
 
+export function rejectCandidate(candidate) {
+  return {
+    type: REJECT_CANDIDATE,
+    payload: candidate
+
+  }
+}
+
 const initialCandidates = [{
   id:1,
   name: 'Marcelo Tarzan',
