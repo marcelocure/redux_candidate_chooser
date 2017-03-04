@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCandidates, approveCandidate } from '../actions/index';
+import { fetchCandidates, approveCandidate, rejectCandidate } from '../actions/index';
 import Candidate from './candidate';
 
 
@@ -41,4 +41,4 @@ function mapStateToProps(state) {
 }
 
 
-export default connect(mapStateToProps, {fetchCandidates, approveCandidate})(Home);
+export default connect(mapStateToProps, {fetchCandidates, approveCandidate, rejectCandidate})(Home);

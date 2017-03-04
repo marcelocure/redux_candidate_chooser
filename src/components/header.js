@@ -14,6 +14,9 @@ class Header extends Component {
                 <li className="nav-item">
                   <Link to="/approved" className="nav-link" activeClassName="active">Approved</Link>
                 </li>
+                <li className="nav-item">
+                  <Link to="/rejected" className="nav-link" activeClassName="active">Rejected</Link>
+                </li>
               </ul>
             </div>
           </nav>
